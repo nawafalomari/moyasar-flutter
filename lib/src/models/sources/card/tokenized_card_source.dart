@@ -4,7 +4,7 @@ import 'package:moyasar/src/models/sources/payment_request_source.dart';
 /// Required data to setup a Tokenized Credit Card payment.
 ///
 /// Use only when you need to customize the UI.
-class CardPaymentRequestSource implements PaymentRequestSource {
+class TokenizedCardSource implements PaymentRequestSource {
   @override
   PaymentType type = PaymentType.token;
 
@@ -12,7 +12,7 @@ class CardPaymentRequestSource implements PaymentRequestSource {
   late String threeDSecure;
   late String manual;
 
-  CardPaymentRequestSource(
+  TokenizedCardSource(
       {required  this.token,
       required  this.threeDSecure,
       required bool manualPayment}) {
