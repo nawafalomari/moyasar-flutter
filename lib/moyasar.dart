@@ -15,6 +15,8 @@ export 'src/models/payment_response.dart' show PaymentResponse, PaymentStatus;
 
 export 'src/models/sources/card/card_request_source.dart'
     show CardPaymentRequestSource;
+export 'src/models/sources/card/tokenized_card_source.dart'
+    show TokenizedCardSource;
 export 'src/models/sources/apple_pay/apple_pay_request_source.dart'
     show ApplePayPaymentRequestSource;
 export 'src/models/sources/card/card_response_source.dart'
